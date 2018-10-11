@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/pop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:onClick="onClick"
+    android:background="#fffcf3">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:layout_margin="10dp">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:text="店铺名称 "
+           android:textColor="#101010"
+           android:textSize="16sp"
+           android:layout_marginLeft="10dp"/>
+
+       <TextView
+           android:id="@+id/name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="000"
+           android:textColor="#101010"
+           android:gravity="right"
+           android:textSize="16sp"
+           android:layout_marginRight="10dp"/>
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="距离 "
+            android:textColor="#101010"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/juli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="000"
+            android:textColor="#101010"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="客流量 "
+            android:textColor="#101010"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/keliu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="000"
+            android:textColor="#101010"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/into"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="立 即 预 约"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="17sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

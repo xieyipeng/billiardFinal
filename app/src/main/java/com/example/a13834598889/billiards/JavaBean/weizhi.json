@@ -1,0 +1,21 @@
+{
+  "queryLocation": [
+    38.021288,
+    112.45525
+  ],
+  "addrList": [
+    {
+      "type": "street",
+      "status": 1,
+      "name": "北环",
+      "admCode": "140108",
+      "admName": "山西省,太原市,尖草坪区",
+      "addr": "",
+      "nearestPoint": [
+        112.45167,
+        38.01704
+      ],
+      "distance": 554.923
+    }
+  ]
+}

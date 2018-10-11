@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fafb"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="7dp"
+            android:background="@drawable/shape_line"
+            android:orientation="horizontal"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="40dp">
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="太原"
+                android:textSize="16sp"
+                android:textColor="#101010"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/geocodekey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="中北大学"
+                android:textColor="#101010"
+                android:textSize="16sp"
+                android:background="@null"
+                android:layout_marginBottom="1dp"/>
+
+            <Button
+                android:background="@drawable/search"
+                android:id="@+id/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5sp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.baidu.mapapi.map.TextureMapView>
+
+            <Button
+                android:id="@+id/my_location"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/location"
+                android:layout_width="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

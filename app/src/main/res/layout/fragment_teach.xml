@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fdab4b"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView_mine2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="教    学"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b4b6b7"/>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_linerk2">
+
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="@drawable/shape"
+                android:id="@+id/button_teach_dianwei"
+                android:text="初级击球点位三维教学"
+                android:textColor="#ffffff"
+                android:layout_width="200dp"
+                android:layout_height="50dp" />
+            <Button
+                android:background="@drawable/shape"
+                android:id="@+id/button_teach_zishi"
+                android:text="初级击球姿势三维教学"
+                android:textColor="#ffffff"
+                android:layout_marginTop="50dp"
+                android:layout_width="200dp"
+                android:layout_height="50dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

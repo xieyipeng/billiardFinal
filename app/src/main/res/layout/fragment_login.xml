@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.3">
+
+                <ImageView
+                    android:id="@+id/login"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/login"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+                <LinearLayout
+                    android:background="@drawable/shape11"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/login_account_Edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:background="@null"
+                        android:hint=" 账  号"
+                        android:maxLines="1"
+                        android:textSize="18sp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/zhanghu" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/shape11"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <EditText
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/login_passWord_Edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.7"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:hint=" 密 码"
+                        android:maxLines="1"
+                        android:textSize="18sp" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/mima" />
+
+                </LinearLayout>
+                <CheckBox
+                    android:textColor="#101010"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/rember_passWord_Check_Box"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_gravity="center"
+                    android:text="记住密码" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:background="@drawable/shape"
+                android:id="@+id/login_button"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:textColor="#ffffff"
+                android:text="登       录"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/shop_keeper_navigation_order"
+        android:icon="@drawable/ic_gps_fixed_black_24dp"
+        android:title="@string/shop_keeper_title_no1" />
+
+    <item
+        android:id="@+id/shop_keeper_navigation_teach"
+        android:icon="@drawable/ic_teach_black_24dp"
+        android:title="@string/shop_keeper_title_no2" />
+
+    <item
+        android:id="@+id/shop_keeper_navigation_share"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/shop_keeper_title_no3" />
+
+    <item
+        android:id="@+id/shop_keeper_navigation_mine"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/shop_keeper_title_mine" />
+</menu>

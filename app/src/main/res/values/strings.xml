@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">彩虹8号</string>
+    <string name="title_teach">教 学</string>
+    <string name="title_order">预 约</string>
+    <string name="title_share">分 享</string>
+    <string name="title_mine">我 的</string>
+
+    <string name="shop_keeper_title_no1">球 桌</string>
+    <string name="shop_keeper_title_no2">零 食</string>
+    <string name="shop_keeper_title_no3">账 单</string>
+    <string name="shop_keeper_title_mine">我 的</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_billiards">BilliardsActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="help1">如果有任何建议，请发送信息至邮箱</string>
+    <string name="help2">971106029@qq.com</string>
+    <string name="help3">App由中北大学Android实验室Century小</string>
+    <string name="help4">组完成，未经允许不得进行任何商业活动</string>
+    <string name="noSign">你还没有设置个性签名，快来设置吧！</string>
+    <string name="SnoSign">ta还没有设置个性签名</string>
+</resources>

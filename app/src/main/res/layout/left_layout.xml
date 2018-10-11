@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.a13834598889.billiards.Tool.LeftSlideView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--"设置"，"删除"按钮使用了TextView而不是Button，是因为５.０以上版本使用Button会显示在上层产出错误显示-->
+        <TextView
+            android:id="@+id/left_setting_TextView"
+            android:layout_width="80dp"
+            android:layout_height="106dp"
+            android:layout_toRightOf="@+id/layout_content"
+            android:background="@drawable/color_adapter_orange"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#DDFFFFFF"
+            android:textSize="25dp" />
+
+
+        <TextView
+            android:id="@+id/left_delete_TextView"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/left_setting_TextView"
+            android:background="@drawable/color_adapter_pink"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="#DDFFFFFF"
+            android:textSize="25dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/left_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="65dp"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/shop_member_photo"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/touxiang" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp">
+
+                        <TextView
+                            android:id="@+id/shop_member_nick_name"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:textColor="#000"
+                            android:layout_height="wrap_content"
+                            android:text="球友"/>
+
+                        <TextView
+                            android:id="@+id/shop_member_sign"
+                            android:layout_width="match_parent"
+                            android:paddingTop="33dp"
+                            android:layout_height="wrap_content"
+                            android:text="个性签名"/>
+
+                        <View
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="1sp"
+                            android:background="#dedede"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.example.a13834598889.billiards.Tool.LeftSlideView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/good_choose_item_LinearLayout"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    android:padding="@dimen/margin_5"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/good_choose_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="农夫山泉" />
+
+    <TextView
+        android:id="@+id/good_choose_item_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000"
+        android:text="X1" />
+
+</LinearLayout>

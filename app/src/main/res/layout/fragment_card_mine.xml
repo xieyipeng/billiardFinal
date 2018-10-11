@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/customer_mine_card_RecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffefc0">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/customer_share_no_card_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/tubiao_tiezi_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="您还未发表任何帖子哦！"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

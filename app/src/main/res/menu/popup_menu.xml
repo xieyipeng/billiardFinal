@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/camera"
+        android:title="   打开摄像头" />
+    <item
+        android:id="@+id/album"
+        android:title="   从相册选取"/>
+</menu>

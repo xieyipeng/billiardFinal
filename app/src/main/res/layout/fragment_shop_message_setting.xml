@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8fafb"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fdab4b"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/shop_message_setting_back_ImageView"
+                android:layout_width="30dp"
+                android:background="@drawable/back"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:onClick="onClick"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑资料"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/shop_ok"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:onClick="onClick"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/shop_message_setting_profile_photo_layout"
+            android:background="#fffcf3"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#101010"
+                android:gravity="center_vertical"
+                android:text="头像"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:background="@drawable/tubiao_you"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_width="33dp"
+                android:layout_height="33dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_marginLeft="0dp" />
+
+
+        <LinearLayout
+            android:id="@+id/shop_message_setting_change_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fffcf3"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="#101010"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/tubiao_you" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_marginLeft="0dp" />
+
+        <LinearLayout
+            android:id="@+id/shop_message_setting_store_name_layout"
+            android:background="#fffcf3"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:text="店铺名称"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/shop_message_setting_store_name_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@null"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_marginLeft="0dp" />
+        <LinearLayout
+            android:id="@+id/shop_message_setting_change_phone_number_layout"
+            android:background="#fffcf3"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:text="手机号"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/shop_message_setting_change_phone_number_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@null"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_marginLeft="0dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/shop_message_setting_change_email_layout"
+            android:background="#fffcf3"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:text="邮箱" />
+            <EditText
+                android:id="@+id/shop_message_setting_change_email_TextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@null"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_marginLeft="0dp" />
+
+
+
+        <LinearLayout
+            android:id="@+id/shop_message_setting_change_sign_layout"
+            android:background="#fffcf3"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:onClick="onClick">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="#101010"
+                android:text="个性签名"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/shop_message_setting_change_sign_TextView"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@null"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef"
+            android:layout_marginLeft="0dp" />
+    </LinearLayout>
+</LinearLayout>

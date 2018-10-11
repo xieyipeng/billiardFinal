@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape11"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/zhanghao" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <EditText
+                        android:id="@+id/register_name_editText"
+                        android:hint="账  号"
+                       android:layout_marginLeft="20dp"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/shape11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/remima" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <EditText
+                        android:id="@+id/register_mima_editText"
+                        android:hint="密 码"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/shape11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_vertical">
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/tubiao_dianhua" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <EditText
+                        android:id="@+id/register_phone_editText"
+                        android:hint="手 机 号"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/shape11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/tubiao_youxiang" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <EditText
+                        android:id="@+id/register_emile_editText"
+                        android:hint="邮 箱"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#2e2e2e"
+                        android:textSize="18sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/register_hint_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:background="@drawable/shape11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="30dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_location" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+                    <EditText
+                        android:id="@+id/register_location_editText"
+                        android:hint="位 置"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#2e2e2e"
+                        android:textSize="16sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox_shangjia"
+                android:text="注册为店铺"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#101010"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_account_button"
+            android:text="注     册"
+            android:textSize="22sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/shape"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

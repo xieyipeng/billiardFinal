@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- ���� echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+    <!-- ΪECharts׼��һ���߱���С����ߣ���Dom -->
+    <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+option = {
+    backgroundColor: 'rgb(255, 255, 255)',
+    toolbox: {
+        show: true,
+        feature: {
+            mark: {
+                show: true
+            },
+            dataView: {
+                show: true,
+                readOnly: false
+            },
+            magicType: {
+                show: true,
+                type: ['pie', 'funnel']
+            },
+            restore: {
+                show: true
+            },
+            saveAsImage: {
+                show: true
+            }
+        }
+    },
+    calculable: true,
+    "tooltip": {
+        "trigger": "item",
+        "formatter": "{a}<br/>{b}:{c}瓶"
+    },
+    "title": {
+        "text": "月饮品销售量",
+        "left": "center",
+        "top": 20,
+        "textStyle": {
+            "color": "#000000"
+        }
+    },
+    "calculable": true,
+    "legend": {
+        "icon": "circle",
+        "x": "center",
+        "y": "15%",
+        "data": [
+            "脉动",
+            "农夫山泉",
+            "海之言",
+            "红牛",
+            "和其正",
+            "可口可乐",
+            "雪碧",
+            "龙井绿茶",
+            "冰红茶"
+        ],
+        "textStyle": {
+            "color": "#000000"
+        }
+    },
+    "series": [{
+        "name": "月饮品销售量",
+        "type": "pie",
+        "radius": [
+            37,
+            155
+        ],
+        "avoidLabelOverlap": false,
+        "startAngle": 0,
+        "center": [
+            "50.1%",
+            "54%"
+        ],
+        "roseType": "area",
+        "selectedMode": "single",
+        "label": {
+            "normal": {
+                "show": true,
+                "formatter": "{c}瓶"
+            },
+            "emphasis": {
+                "show": true
+            }
+        },
+        "labelLine": {
+            "normal": {
+                "show": true,
+                "smooth": false,
+                "length": 20,
+                "length2": 10
+            },
+            "emphasis": {
+                "show": true
+            }
+        },
+        "data": [{
+                "value": 1848,
+                "name": "脉动",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#f845f1"
+                    }
+                }
+            },
+            {
+                "value": 1733,
+                "name": "农夫山泉",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#ad46f3"
+                    }
+                }
+            },
+            {
+                "value": 1210,
+                "name": "海之言",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#5045f6"
+                    }
+                }
+            },
+            {
+                "value": 1480,
+                "name": "红牛",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#4777f5"
+                    }
+                }
+            },
+            {
+                "value": 1248,
+                "name": "和其正",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#44aff0"
+                    }
+                }
+            },
+            {
+                "value": 1558,
+                "name": "可口可乐",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#45dbf7"
+                    }
+                }
+            },
+            {
+                "value": 1735,
+                "name": "雪碧",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#f6d54a"
+                    }
+                }
+            },
+            {
+                "value": 1644,
+                "name": "龙井绿茶",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#f69846"
+                    }
+                }
+            },
+            {
+                "value": 1988,
+                "name": "冰红茶",
+                "itemStyle": {
+                    "normal": {
+                        "color": "#ff4343"
+                    }
+                }
+            }
+        ]
+    }]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>

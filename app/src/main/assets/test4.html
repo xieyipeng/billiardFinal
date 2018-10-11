@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- ���� echarts.js -->
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+    <!-- ΪECharts׼��һ���߱���С����ߣ���Dom -->
+    <div id="main" style="width: 1000px;height:600px;"></div>
+    <script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+var scale = 1;
+var echartData = [{
+    value: 378,
+    name: '饮品收入'
+}, {
+    value: 584,
+    name: '台费收入'
+}, {
+    value: 231,
+    name: '预约订单收入'
+}, {
+    value: 79,
+    name: '损坏赔偿收入'
+}, {
+    value: 337,
+    name: '教学示范收入'
+}, {
+    value: 84,
+    name: '其他收入'
+}]
+var rich = {
+    yellow: {
+        color: "#ffc72b",
+        fontSize: 30 * scale,
+        padding: [5, 4],
+        align: 'center'
+    },
+    total: {
+        color: "#ffc72b",
+        fontSize: 40 * scale,
+        align: 'center'
+    },
+    white: {
+        color: "#000000",
+        align: 'center',
+        fontSize: 14 * scale,
+        padding: [21, 0]
+    },
+    blue: {
+        color: '#49dff0',
+        fontSize: 16 * scale,
+        align: 'center'
+    },
+    hr: {
+        borderColor: '#0b5263',
+        width: '100%',
+        borderWidth: 1,
+        height: 0,
+    }
+}
+var option = {
+    backgroundColor: '#ffffff',
+    title: {
+        text:'今日收入总额',
+        left:'center',
+        top:'53%',
+        padding:[24,0],
+        textStyle:{
+            color:'#000000',
+            fontSize:18*scale,
+            align:'center'
+        }
+    },
+    legend: {
+        selectedMode:false,
+        formatter: function(name) {
+            var total = 0;
+            var averagePercent;
+            echartData.forEach(function(value, index, array) {
+                total += value.value;
+            });
+            return '{total|' + total + '}';
+        },
+        data: [echartData[0].name],
+        left: 'center',
+        top: 'center',
+        icon: 'none',
+        align:'center',
+        textStyle: {
+            color: "#000000",
+            fontSize: 16 * scale,
+            rich: rich
+        },
+    },
+    series: [{
+        name: '今日收入总额',
+        type: 'pie',
+        radius: ['42%', '50%'],
+        hoverAnimation: false,
+        color: ['#c487ee', '#deb140', '#49dff0', '#034079', '#6f81da', '#00ffb4'],
+        label: {
+            normal: {
+                formatter: function(params, ticket, callback) {
+                    var total = 0;
+                    var percent = 0;
+                    echartData.forEach(function(value, index, array) {
+                        total += value.value;
+                    });
+                    percent = ((params.value / total) * 100).toFixed(1);
+                    return '{white|' + params.name + '}\n{hr|}\n{yellow|' + params.value + '}\n{blue|' + percent + '%}';
+                },
+                rich: rich
+            },
+        },
+        labelLine: {
+            normal: {
+                length: 55 * scale,
+                length2: 0,
+                lineStyle: {
+                    color: '#0b5263'
+                }
+            }
+        },
+        data: echartData
+    }]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
