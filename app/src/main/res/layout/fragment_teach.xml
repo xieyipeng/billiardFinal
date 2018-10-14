@@ -26,6 +26,18 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="教    学"/>
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true">
+            <ImageView
+                android:id="@+id/teach_tack_photo"
+                android:layout_width="30dp"
+                android:background="@drawable/ic_tack_photo"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
     </RelativeLayout>
 
     <ImageView

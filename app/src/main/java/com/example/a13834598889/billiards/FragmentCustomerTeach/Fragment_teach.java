@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 import com.example.a13834598889.billiards.JavaBean.User;
@@ -22,6 +23,8 @@ import com.example.a13834598889.billiards.Opengles.TouchableObject;
 import com.example.a13834598889.billiards.R;
 import com.example.a13834598889.billiards.Tool.App;
 
+import java.io.IOException;
+import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,33 +43,75 @@ import static com.example.a13834598889.billiards.LoginActivity.mGLSurfaceView;
  */
 
 public class Fragment_teach extends Fragment {
-    private static CircleImageView circleImageView2;
 
+    private static CircleImageView circleImageView2;
     public Button button_dianwei;
     public Button button_zishi;
-
-
     public static int flagChoose;
-
-
+    private ImageView tackPhoto;
+    private Socket socket;
     public static ArrayList<BallObject> ballObjects = new ArrayList<>();
 
-
     public static Fragment_teach newInstance() {
-        Fragment_teach fragment_teach = new Fragment_teach();
-        return fragment_teach;
+        return new Fragment_teach();
     }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_teach, container, false);
+        initViews(view);
+        initClicks();
+        return view;
+    }
+
+    private void initClicks() {
+        tackPhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                //选择图片获取文件流
+                //上传服务器，获取数据
+
+                try {
+                    socket=new Socket("74.82.215.154",8000);
+                } catch (IOException e) {
+                    Log.e(TAG, "onClick: "+e.getMessage() );
+                }
+
+                
+//                s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+//                host = '178.128.180.92'
+//                port = 8000
+//                s.connect((host, port))
+//
+//                BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+//
+//                while True:
+//                inp = input('>>>>>>>>')  # post|11.png
+//                        cmd, path = inp.split('|')  # 拿到post，以及文件11.jpg
+//                        path = os.path.join(BASE_DIR, path)
+//                filename = os.path.basename(path)
+//                file_size = os.stat(path).st_size
+//                file_info = 'post|%s|%s' % (filename, file_size)  # split获取字符串的信息       以此方式打包，依次为   cmd/name/size
+//                s.sendall(bytes(file_info, 'utf8'))  # 第一次发送请求，不是具体内容，而是先发送数据信息
+//
+//                        f = open(path, 'rb')
+//                has_sent = 0
+//                while has_sent != file_size:
+//                data = f.read(1024)
+//                s.sendall(data)  # 发送真实数据
+//                has_sent += len(data)
+//
+//                f.close()
+//                print('上传成功')
+//                msg = s.recv(1024)
+//                print(msg.decode('utf-8'))
 
 
-        button_dianwei = (Button) view.findViewById(R.id.button_teach_dianwei);
-        button_zishi = (Button) view.findViewById(R.id.button_teach_zishi);
 
-
+            }
+        });
         button_dianwei.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -93,7 +138,6 @@ public class Fragment_teach extends Fragment {
                 startActivity(intent);
             }
         });
-
 
         button_zishi.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,15 +166,13 @@ public class Fragment_teach extends Fragment {
                 startActivity(intent);
             }
         });
-
-
-        initViews(view);
-
-        return view;
     }
 
     private void initViews(View view) {
         circleImageView2 = view.findViewById(R.id.circleImageView_mine2);
+        button_dianwei =  view.findViewById(R.id.button_teach_dianwei);
+        tackPhoto=view.findViewById(R.id.teach_tack_photo);
+        button_zishi =  view.findViewById(R.id.button_teach_zishi);
         loadingPhoto();
     }
 
